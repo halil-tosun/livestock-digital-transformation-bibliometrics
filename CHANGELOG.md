@@ -46,3 +46,5 @@ The format is inspired by *Keep a Changelog* and follows semantic versioning whe
 
 ### Notes
 The Zenodo DOI will be added after the first public repository release.
+
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541503
