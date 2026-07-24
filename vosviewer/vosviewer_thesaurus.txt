@@ -1,0 +1,7 @@
+label;replace by
+artificial intelligence;ai
+precision livestock farming;plf
+smart farming;digital livestock transformation
+digital agriculture;digital livestock transformation
+climate change;climate resilience
+climate adaptation;climate resilience

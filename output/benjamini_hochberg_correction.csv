@@ -1,0 +1,8 @@
+test,raw_p,bh_adjusted_p
+Test 3a (digital prevalence trend),3.043458170594004e-12,2.130420719415803e-11
+Test 1 (growth trend),2.07e-07,7.245e-07
+Test 4 NB: has_digital,0.0005,0.0011666666666666668
+Test 4 NB: has_social,0.0064,0.0112
+Test 4 NB: open access,0.179,0.2506
+Test 3b (social prevalence trend),0.5671096800137057,0.6616279600159899
+Test 2 (within-cluster percentile),0.6875,0.6875

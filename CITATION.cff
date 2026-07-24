@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Replication Package: Social Dimensions in Livestock Digital Transformation: A Bibliometric and Adoption-Economics Analysis"
+message: "If you use this replication package, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Tosun"
+    given-names: "Halil"
+    orcid: "https://orcid.org/0000-0001-5117-0390"
+    affiliation: "ADA University, School of Agricultural and Food Sciences, Department of Animal Science, Baku, Azerbaijan"
+email: "halilibrahimtosun@gmail.com"
+repository-code: "https://github.com/REPLACE_WITH_USERNAME/livestock-digital-transformation-replication"
+keywords:
+  - bibliometrics
+  - livestock digital transformation
+  - precision livestock farming
+  - social dimensions
+  - adoption economics
+  - reproducibility
+license: "MIT"
+version: "1.0.0"
+date-released: "2026-07-24"

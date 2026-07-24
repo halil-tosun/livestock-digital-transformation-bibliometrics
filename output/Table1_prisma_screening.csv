@@ -1,0 +1,6 @@
+Stage,Records,Excluded,Reason
+Identification,7405,,
+Duplicate removal,7405,0.0,No duplicates
+Title/abstract screening,2867,4538.0,Irrelevant thematic scope
+Eligibility assessment,2812,55.0,Incomplete metadata
+Final filtering (document type),2812,0.0,All confirmed journal articles

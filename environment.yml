@@ -1,0 +1,14 @@
+name: livestock-digital-repro
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+  - pandas>=3.0
+  - scipy>=1.17
+  - scikit-learn>=1.8
+  - networkx>=3.6
+  - matplotlib>=3.10
+  - pip
