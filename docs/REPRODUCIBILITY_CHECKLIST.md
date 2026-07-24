@@ -26,7 +26,9 @@
 | Tables reproducible | ✓ |
 | Deterministic clustering (sorted node/edge insertion order) | ✓ |
 | Open repository planned | ✓ |
-| Zenodo DOI | ☐ Pending repository release |
+| Zenodo DOI | ✓ |
+
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541503
 
 ---
 
@@ -79,9 +81,10 @@ section of the main README):
 
 ## Transparency Statement
 
-This repository has been prepared to maximise computational reproducibility
-and long-term accessibility. Minor cross-tool discrepancies (source-count
-rounding, a genuine citation tie, Louvain cluster-count determinism) are
-disclosed explicitly in the main README rather than silently resolved.
-After public release, the archived repository will be linked to Zenodo to
-obtain a permanent DOI.
+This repository has been prepared to maximise computational reproducibility and long-term accessibility. Minor cross-tool discrepancies (source-count normalisation, a genuine citation tie, and Louvain clustering determinism) are documented explicitly in the main README rather than being silently resolved.
+
+This release has been permanently archived on Zenodo and assigned the following DOI:
+
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541503
+
+The archived Zenodo record serves as the citable, immutable version of the reproducibility package accompanying the manuscript.
