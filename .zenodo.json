@@ -1,0 +1,37 @@
+{
+  "title": "Replication Package: Social Dimensions in Livestock Digital Transformation: A Bibliometric and Adoption-Economics Analysis",
+  "description": "<p>Complete replication package for a bibliometric and economic-synthesis study of livestock digital transformation research. Includes:</p><ul><li>Python source code reproducing all bibliometric analyses, statistical tests, tables, and figures (PRISMA-screened dataset of 2,812 peer-reviewed articles, 2000–2026, retrieved from the Lens Scholarly Database);</li><li>An R/Bibliometrix script providing an independent cross-validation of the descriptive bibliometrics and producing Callon's strategic (thematic) map and a Sankey thematic-evolution diagram;</li><li>VOSviewer project files providing a third, independent cross-validation of the keyword co-occurrence network;</li><li>Raw and PRISMA-filtered bibliometric datasets;</li><li>Full documentation (codebook, data description, reproducibility checklist, and step-by-step replication guide).</li></ul><p>The study tests whether social-dimension research (farmers, technology, policy, socioeconomic factors) in livestock digital-transformation research is structurally marginalised within the scientific literature or simply rare in prevalence, and synthesises recent peer-reviewed evidence on the scale-conditional economic returns to precision livestock technology adoption.</p><p>All known cross-tool discrepancies (a genuine citation tie, a source-count rounding difference, and a Louvain clustering determinism issue) are disclosed explicitly in the README rather than silently resolved, consistent with the reproducibility-first approach followed throughout.</p>",
+  "creators": [
+    {
+      "name": "Tosun, Halil",
+      "affiliation": "ADA University, School of Agricultural and Food Sciences, Department of Animal Science, Baku, Azerbaijan",
+      "orcid": "0000-0001-5117-0390"
+    }
+  ],
+  "keywords": [
+    "bibliometrics",
+    "livestock digital transformation",
+    "precision livestock farming",
+    "social dimensions",
+    "digital divide",
+    "adoption economics",
+    "science mapping",
+    "reproducibility",
+    "open science",
+    "VOSviewer",
+    "bibliometrix"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "notes": "Underlying bibliometric data were retrieved from the Lens Scholarly Database (https://www.lens.org) under its terms of use for research purposes. Code is released under the MIT License; see LICENSE and DATA_DESCRIPTION.md for data-specific terms.",
+  "related_identifiers": [
+    {
+      "identifier": "https://www.lens.org",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    }
+  ],
+  "version": "1.0.0"
+}
