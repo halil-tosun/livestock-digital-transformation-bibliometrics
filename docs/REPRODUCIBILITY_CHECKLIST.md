@@ -1,7 +1,7 @@
 # REPRODUCIBILITY_CHECKLIST
 
 ## Study
-**Social Dimensions in Livestock Digital Transformation: A Bibliometric and Adoption-Economics Analysis**
+**Beyond Technology: Understanding Sustainable Livestock Digital Transformation through Bibliometric Evidence and Adoption Economics**
 
 ---
 
