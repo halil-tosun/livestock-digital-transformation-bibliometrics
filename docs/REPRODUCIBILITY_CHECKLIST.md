@@ -1,7 +1,7 @@
 # REPRODUCIBILITY_CHECKLIST
 
 ## Study
-**Beyond Technology: Understanding Sustainable Livestock Digital Transformation through Bibliometric Evidence and Adoption Economics**
+**Beyond Technology: Understanding Sustainable Livestock Digital Transformation through Adoption Economics and Evidence Synthesis**
 
 ---
 
