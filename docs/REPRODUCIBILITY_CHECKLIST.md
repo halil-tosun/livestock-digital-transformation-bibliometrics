@@ -28,7 +28,7 @@
 | Open repository planned | ✓ |
 | Zenodo DOI | ✓ |
 
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541503
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541502
 
 ---
 
@@ -85,6 +85,6 @@ This repository has been prepared to maximise computational reproducibility and 
 
 This release has been permanently archived on Zenodo and assigned the following DOI:
 
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541503
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541502
 
 The archived Zenodo record serves as the citable, immutable version of the reproducibility package accompanying the manuscript.
