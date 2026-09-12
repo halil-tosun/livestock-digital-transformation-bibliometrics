@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-title: "Replication Package: Social Dimensions in Livestock Digital Transformation: A Bibliometric and Adoption-Economics Analysis"
-message: "If you use this replication package, please cite it using the metadata below."
+message: "If you use this software, please cite it as below."
 type: software
+title: "Replication Package: Social Dimensions in Livestock Digital Transformation: A Bibliometric and Adoption-Economics Analysis"
 authors:
   - family-names: "Tosun"
     given-names: "Halil"
@@ -22,5 +22,5 @@ keywords:
   - adoption economics
   - reproducibility
 license: MIT
-version: "2.0.3"
-date-released: "2026-09-12"
+version: 2.0.4
+date-released: 2026-09-12
