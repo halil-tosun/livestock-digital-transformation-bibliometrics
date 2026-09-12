@@ -13,7 +13,7 @@ authors:
     orcid: "https://orcid.org/0000-0003-1739-7457"
     affiliation: "University of Wisconsin-Madison, Department of Animal and Dairy Sciences, USA"
     email: "vcabrera@wisc.edu"
-repository-code: "https://github.com/halil-tosun/livestock-digital-transformation-bibliometrics"
+repository-code: "https://github.com/halil-tosun/livestock-digital-transformation-replication"
 keywords:
   - bibliometrics
   - livestock digital transformation
@@ -21,6 +21,6 @@ keywords:
   - social dimensions
   - adoption economics
   - reproducibility
-license: "MIT"
+license: MIT
 version: "2.0.0"
 date-released: "2026-08-28"
