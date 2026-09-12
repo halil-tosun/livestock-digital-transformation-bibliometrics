@@ -25,7 +25,7 @@
     "VOSviewer",
     "bibliometrix"
   ],
-  "license": "MIT",
+  "license": "mit",
   "upload_type": "software",
   "access_right": "open",
   "language": "eng",
