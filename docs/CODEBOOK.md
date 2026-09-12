@@ -79,8 +79,10 @@ Runs the formal inferential tests:
   (Tests 1-4) to control the false discovery rate.
 
 ### `07_make_figures.py`
-Generates Figure 1 (keyword co-occurrence network, Louvain clusters
-coloured) and Figure 2 (annual publication output) at 300 DPI.
+Generates Fig. 1 (keyword co-occurrence network, Louvain clusters
+coloured, top 30 keywords by occurrence) and Fig. 2 (annual publication
+output) at 300 DPI. These are the only two figures embedded in the
+manuscript body as of v2; see CHANGELOG.md.
 
 ### `run_all.py`
 Runs all seven numbered scripts in sequence and prints a summary of total
@@ -94,10 +96,14 @@ table or figure.
 ### `../r/bibliometrix_reproduction.R`
 Independently rebuilds the same keyword-cleaned dataset in R and cross-
 validates the descriptive bibliometrics against the Python output. Also
-produces Callon's strategic (thematic) map (Figure 3) and the Sankey
-thematic-evolution diagram (Figure 4) using bibliometrix's `thematicMap()`
+produces Callon's strategic (thematic) map and the Sankey
+thematic-evolution diagram using bibliometrix's `thematicMap()`
 and `thematicEvolution()` functions — analyses that require R/Bibliometrix
-specifically and are not available in the Python pipeline.
+specifically and are not available in the Python pipeline. As of
+manuscript v2, both outputs are summarised in a single "Independent
+verification (VOSviewer and R/Bibliometrix)" paragraph rather than
+embedded as separate numbered figures; the full images remain in
+`../figures/`.
 
 ### `../vosviewer/`
 Contains a pre-cleaned, harmonised RIS file (`lens_for_vosviewer.ris`) for
@@ -107,7 +113,8 @@ synonym/harmonisation thesaurus file. VOSviewer provides a third,
 fully independent cross-validation of the keyword co-occurrence network
 (different software, different clustering algorithm, no shared
 preprocessing code with the Python or R pipelines), producing the four
-Appendix figures.
+figures referenced in the manuscript (as of v2) as Electronic
+Supplementary Material Fig. S1-S4.
 
 ## A Note on the Adoption-Economics Evidence Table
 

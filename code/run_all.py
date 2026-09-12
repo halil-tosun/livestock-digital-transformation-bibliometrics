@@ -54,5 +54,6 @@ if __name__ == "__main__":
 
     print(f"\nAll done in {time.time() - t0:.0f} seconds.")
     print("See ../output/ for all tables and ../figures/ for Figures 1-2.")
-    print("Figures 3-4 (R/Bibliometrix) and Appendix Figures A1-A4 (VOSviewer)")
+    print("Callon's strategic map, the Sankey diagram (R/Bibliometrix), and the")
+    print("VOSviewer cross-check (manuscript Fig. S1-S4, supplementary material)")
     print("are produced separately -- see ../r/ and ../vosviewer/.")

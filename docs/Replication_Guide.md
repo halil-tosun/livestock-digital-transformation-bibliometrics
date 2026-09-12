@@ -60,14 +60,18 @@ python 04_citation_regression.py
    resolves correctly), or adjust the path at the top of the script.
 3. Sections 4-5 of the script reproduce the descriptive bibliometrics and
    keyword network for cross-validation against the Python output.
-4. Section 6 produces Callon's strategic map (Figure 3); save it with
-   `ggsave()` or the RStudio Plots-pane export button.
-5. Section 7 produces the Sankey thematic-evolution diagram (Figure 4).
+4. Section 6 produces Callon's strategic map; save it with
+   `ggsave()` or the RStudio Plots-pane export button. As of manuscript
+   v2 this is not embedded as a separate numbered figure, but is
+   summarised in the "Independent verification (VOSviewer and
+   R/Bibliometrix)" paragraph.
+5. Section 7 produces the Sankey thematic-evolution diagram (also
+   summarised, not separately numbered, as of manuscript v2).
    This renders as an interactive HTML widget in the RStudio/Posit
    **Viewer** pane (not the Plots pane) — use the Viewer pane's own
    "Export > Save as Image" button, or take a screenshot directly.
 
-## Step 4 — Reproduce the VOSviewer cross-check (Appendix Figures A1-A4)
+## Step 4 — Reproduce the VOSviewer cross-check (manuscript Fig. S1-S4)
 
 1. Download and install VOSviewer (free, https://www.vosviewer.com).
 2. Open VOSviewer and choose "Create a map based on bibliographic data."
@@ -81,7 +85,7 @@ python 04_citation_regression.py
 6. Once the network renders, zoom to each of the four social-dimension
    keywords individually (farmers, technology, policy, socioeconomic
    factors) and take a screenshot of each zoomed view — these correspond
-   to Appendix Figures A1-A4.
+   to manuscript Fig. S1-S4 (Electronic Supplementary Material).
 7. Alternatively, `vosviewer/vosviewer_network_thr5.txt` is a pre-computed
    network file that can be opened directly in VOSviewer as a
    guaranteed-working fallback if the RIS import behaves differently in

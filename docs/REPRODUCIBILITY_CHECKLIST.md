@@ -1,7 +1,7 @@
 # REPRODUCIBILITY_CHECKLIST
 
 ## Study
-**Beyond Technology: Understanding Sustainable Livestock Digital Transformation through Adoption Economics and Evidence Synthesis**
+**Social Dimensions in Livestock Digital Transformation: A Bibliometric and Adoption-Economics Analysis**
 
 ---
 
@@ -26,9 +26,7 @@
 | Tables reproducible | ✓ |
 | Deterministic clustering (sorted node/edge insertion order) | ✓ |
 | Open repository planned | ✓ |
-| Zenodo DOI | ✓ |
-
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541502
+| Zenodo DOI | ☐ Pending repository release |
 
 ---
 
@@ -55,7 +53,8 @@
 5. For Figures 3-4, open `r/bibliometrix_reproduction.R` in R/RStudio (or
    Posit Cloud) and run interactively; `thematicEvolution()`'s Sankey
    output renders in the Viewer pane, not the Plots pane.
-6. For the Appendix figures, import `vosviewer/lens_for_vosviewer.ris`
+6. For the Electronic Supplementary Material figures (Fig. S1-S4), import
+   `vosviewer/lens_for_vosviewer.ris`
    into VOSviewer (Lens tab), set the minimum-occurrence threshold to 5,
    and locate the four social-dimension keywords individually.
 
@@ -81,10 +80,9 @@ section of the main README):
 
 ## Transparency Statement
 
-This repository has been prepared to maximise computational reproducibility and long-term accessibility. Minor cross-tool discrepancies (source-count normalisation, a genuine citation tie, and Louvain clustering determinism) are documented explicitly in the main README rather than being silently resolved.
-
-This release has been permanently archived on Zenodo and assigned the following DOI:
-
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541502
-
-The archived Zenodo record serves as the citable, immutable version of the reproducibility package accompanying the manuscript.
+This repository has been prepared to maximise computational reproducibility
+and long-term accessibility. Minor cross-tool discrepancies (source-count
+rounding, a genuine citation tie, Louvain cluster-count determinism) are
+disclosed explicitly in the main README rather than silently resolved.
+After public release, the archived repository will be linked to Zenodo to
+obtain a permanent DOI.

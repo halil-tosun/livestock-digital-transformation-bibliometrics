@@ -1,0 +1,6 @@
+Point estimate coef diff (social - digital, log scale): 0.18178309924140823
+IRR ratio (social/digital): 1.1993540248676464
+
+Bootstrap (n=300): SE=0.2055, z=0.885, p=0.3763
+95% CI for log-diff: [-0.2604, 0.5210]
+95% CI for IRR ratio: [0.771, 1.684]

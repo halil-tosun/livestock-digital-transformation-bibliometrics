@@ -1,4 +1,6 @@
-# Beyond Technology: Understanding Sustainable Livestock Digital Transformation through Adoption Economics and Evidence Synthesis
+# Social Dimensions in Livestock Digital Transformation: A Bibliometric and Adoption-Economics Analysis
+
+**Authors:** Halil Tosun (ADA University) and Victor E. Cabrera (University of Wisconsin-Madison)
 
 ## Replication Package
 
@@ -96,7 +98,8 @@ python run_all.py
 This reproduces the complete Python analytical workflow: dataset overview
 and PRISMA screening verification, leading-source and citation-structure
 descriptives, the citation-impact regression models (preliminary Poisson,
-primary negative binomial, log1p-OLS robustness check), the keyword
+primary negative binomial — the only regression table retained in the
+manuscript body — and log1p-OLS robustness check), the keyword
 co-occurrence network and Louvain clustering, all formal statistical
 significance tests, and Figures 1-2.
 
@@ -104,36 +107,52 @@ Expected runtime: 2-3 minutes on a standard laptop. The slowest step is
 bootstrap resampling in the negative binomial regression.
 
 Two further analyses are produced in separate software environments and
-are not part of the Python pipeline:
+are not part of the Python pipeline. As of manuscript v2 (see CHANGELOG),
+neither is embedded as a numbered figure in the manuscript body — both
+are condensed into a single "Independent verification (VOSviewer and
+R/Bibliometrix)" paragraph in the Results, with full outputs retained
+here for transparency and reproducibility:
 
 - **R/Bibliometrix** (`r/bibliometrix_reproduction.R`): independent
   cross-validation of the descriptive bibliometrics, Callon's strategic
-  map (Figure 3), and the Sankey thematic-evolution diagram (Figure 4).
+  map, and the Sankey thematic-evolution diagram (`figures/`, not
+  individually numbered in the manuscript).
 - **VOSviewer** (`vosviewer/`): an independent, third cross-validation of
-  the keyword co-occurrence network, producing the four Appendix figures
-  (`figures/appendix_vosviewer/`).
+  the keyword co-occurrence network, producing the four Electronic
+  Supplementary Material figures referenced in the manuscript as
+  Fig. S1-S4 (`figures/supplementary_vosviewer/`).
 
 ## Script-to-Output Correspondence
+
+**Manuscript table/figure numbers below refer to the current (v2) manuscript.**
+Several tables present in manuscript v1 (the preliminary Poisson
+regression, the log1p-OLS robustness regression, and the annual
+document-count table) were condensed into one-sentence in-text summaries
+during peer-review revision to keep the manuscript focused; the
+underlying scripts and CSV outputs are unchanged and still reproduce
+those results in full — see CHANGELOG.md for the full list of
+manuscript-side condensations.
 
 | Script | Produces |
 |---|---|
 | `01_dataset_overview.py` | Table 1 (PRISMA screening); dataset overview summary |
 | `02_leading_sources.py` | Leading-sources table (with dataset-specific h-index) |
 | `03_citation_structure.py` | Top-cited documents table (including the rank-9/10 citation tie) |
-| `04_citation_regression.py` | Preliminary Poisson, primary negative binomial, and log1p-OLS robustness regression tables |
+| `04_citation_regression.py` | Preliminary Poisson and log1p-OLS robustness regressions (both summarised in-text only in the manuscript, full tables in `output/`); primary negative binomial regression (manuscript Table 2) |
 | `05_keyword_network.py` | Keyword co-occurrence network, threshold-sensitivity table, Louvain cluster assignments |
-| `06_statistical_tests.py` | Annual growth test, within-cluster percentile test, five-year-bin prevalence test, Benjamini-Hochberg correction |
-| `07_make_figures.py` | Figure 1 (keyword network), Figure 2 (annual growth) |
-| `r/bibliometrix_reproduction.R` | Independent cross-check of Sections above; Figure 3 (Callon map); Figure 4 (Sankey thematic evolution) |
-| `vosviewer/` | Independent cross-check of the keyword network; Appendix Figures A1-A4 |
+| `06_statistical_tests.py` | Annual growth test, within-cluster percentile test (manuscript Table 4), five-year-bin prevalence test (manuscript Table 5), Benjamini-Hochberg correction — all summarised in manuscript Table 3 |
+| `07_make_figures.py` | Fig. 1 (keyword network), Fig. 2 (annual growth) |
+| `r/bibliometrix_reproduction.R` | Independent cross-check of sections above; Callon's strategic map and the Sankey thematic-evolution diagram (full images in `figures/`, condensed to one paragraph in the manuscript body) |
+| `vosviewer/` | Independent cross-check of the keyword network; manuscript Fig. S1-S4 (Electronic Supplementary Material) |
 
-**Note on the adoption-economics evidence table:** the table summarising
-eight peer-reviewed studies on precision livestock/agriculture adoption
-economics is a manually compiled narrative literature synthesis, not a
-computational output — there is no script that generates it. Its
-search-and-selection protocol is documented in the manuscript's Methods
-section, and the table itself, with full source citations, appears in
-the manuscript's Results section on the adoption-economics synthesis.
+**Note on the adoption-economics evidence table (manuscript Table 6):**
+the table summarising eight peer-reviewed studies on precision
+livestock/agriculture adoption economics is a manually compiled
+narrative literature synthesis, not a computational output — there is no
+script that generates it. Its search-and-selection protocol is
+documented in the manuscript's Methods section, and the table itself,
+with full source citations, appears in the manuscript's Results section
+on the adoption-economics synthesis.
 
 ## Known, Documented Discrepancies
 
@@ -158,15 +177,18 @@ silently resolved:
    return a deterministic result; without this, Python's per-process
    string-hash randomisation causes the cluster count to vary
    non-deterministically across runs.
-5. **Preliminary Poisson model z-statistics.** The manuscript's Table 4
-   (preliminary Poisson regression, explicitly superseded by the primary
-   negative binomial model in Table 2) reports z-statistics that differ
-   by a small margin (≤0.1) from this package's output, though the
+5. **Preliminary Poisson model z-statistics.** This package's
+   `output/regression_poisson_preliminary.csv` reports z-statistics that
+   differ by a small margin (≤0.1) from an earlier full Poisson
+   regression table that appeared in manuscript v1. As of manuscript v2,
+   the preliminary Poisson model is summarised in-text only (reporting
+   solely the Pearson dispersion statistic, 140.9, that motivates the
+   primary negative binomial model), so this z-statistic discrepancy no
+   longer affects any manuscript-reported number; it is retained here
+   for full transparency about the underlying computational output. The
    coefficients, incidence rate ratios, and bootstrap confidence
-   intervals match exactly. This table is diagnostic-only — its sole
-   purpose is to document the overdispersion statistic that motivates
-   the primary model — and no manuscript conclusion depends on its
-   z-statistics or p-values.
+   intervals for the primary (negative binomial) model are unaffected
+   and match exactly.
 
 ## Citation
 
@@ -181,12 +203,15 @@ for research purposes; see `docs/DATA_DESCRIPTION.md`.
 
 ## Contact
 
-**Halil Tosun, Ph.D.**
-
+**Halil Tosun** (corresponding author)
+ADA University, Department of Animal Science, Baku, Azerbaijan
 ORCID: https://orcid.org/0000-0001-5117-0390
-
 Email: halilibrahimtosun@gmail.com
 
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.21541503
+**Victor E. Cabrera**
+University of Wisconsin-Madison, Department of Animal and Dairy Sciences, USA
+ORCID: https://orcid.org/0000-0003-1739-7457
+Email: vcabrera@wisc.edu
 
-**Version:** 1.0.0
+**Version:** 2.0.0
+**Zenodo DOI:** To be assigned after public release.
